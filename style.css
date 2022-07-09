@@ -5,29 +5,37 @@
 }
 
 /* ----- temporary styles for structural html ------*/
-
 * {
     padding: 0.5rem;
     border:1px solid rgb(225,225,225)
 }
 
-body {border: none;}
+body {
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    color: #192b37;
+}
+
 html {border: none;}
 
 
-/* Image Styles */
+/* ------------ Image Styles -----------*/
 .bg-image {
     background-image: url('/images/the-sleep-co-bed.jpg');
     background-size: cover;
     min-height: 10rem;
 }
 
-/*  Universal styles & utility classes */
+/* ---------- Universal styles & utility classes ------------m*/
 
-.padded { padding: 5%; }
-.padded-sm { padding: 1rem; }
+.padded     { padding: 5%;    }
+.padded-sm  { padding: 1rem;  }
 
 .bg-dark {
     background-color: #192b37;
     color: white;
 }
+
+.text-left      { text-align: left;     }
+.text-center    { text-align: center;   }
+.text-right     { text-align: right;    }
