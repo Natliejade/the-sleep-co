@@ -2,6 +2,9 @@
 <html>
   <!-- This is the head of our html, where we add external resources and metadata - all the information for the browser that is not seen-->
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact The Sleep Co</title>
 
     <!-- This is our grid style sheet -->
@@ -31,49 +34,159 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
 
+  <!-- This is the body where all the content goes, all information seen in the browser -->
   <body>
-    <nav>
-      <a href="/index.html"> Home </a>
-      <a href="/about.html"> About </a>
-      <a href="/contact.html"> Contact </a>
-    </nav>
-
     <!------------------------------Header Banner------------------------>
-    <header class="padded-md grid text-center tall-100">
-      <div class="col-12-middle">
+    <header class="padded-md grid center tall-60">
+      <div class="header-nav col-12 grid left">
+        <div class="col-4">
+          <a href="/index.html">
+            <h2 class="logo">The Sleep Co</h2>
+          </a>
+        </div>
+
+        <nav class="col-8 right">
+          <a href="/index.html"> Home </a>
+          <a href="/about.html"> About </a>
+          <a href="/products.html"> Products </a>
+          <a href="/contact.html"> Contact </a>
+        </nav>
+      </div>
+      <div class="col-12">
         <h3 class="font-weight-xbold editable">
-          <span class="featured-text">contact</span> us
+          why
+          <span class="featured-text">wait?</span>
         </h3>
-        <h1 class="font-weight-normal editable">we'd love to hear from you</h1>
+        <h1 class="font-weight-normal editable">
+          one call away from the perfect night sleep
+        </h1>
       </div>
     </header>
 
-    <!---------------------------------- Footer  ------------------------------->
-    <footer class="padded-md grid-spaceBetween bg-dark">
-      <div class="col-4-bottom">
-        <h2 class="editable">
-          Let's <br />
-          <span class="featured-text">connect</span>
-        </h2>
-        <p class="editable">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus
-          molestiae placeat, aperiam voluptatem dolorem architecto fugit? Quia
-          commodi tempora consequuntur quaerat! Eos provident aliquid vel,
-          laboriosam error odit repellendus?
+    <!---------------------------Lets connect/contact form ------------->
+    <section class="grid-spaceBetween-middle bg-dark light-text padded-md">
+      <div class="col-4 padded-sm">
+        <h2>let's <span class="featured-text">connect</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+          odio, optio quisquam officia illum excepturi, accusantium temporibus
+          assumenda natus iure delectus officia illum excepturi, accusantium
+          temporibus assumenda natus iure delectus.
         </p>
       </div>
-      <div class="col-5-bottom">
-        <p class="editable">
-          <strong>Call:</strong> <a href="tel:#">567890</a>
+      <div class="col-6 padded-md">
+        <form>
+          <input type="text" name="_name" placeholder="Your Name" />
+          <input type="email" name="_replyto" placeholder="Your Email" />
+          <textarea
+            name="message"
+            placeholder="Tell us what you want..."
+            rows="6"
+          ></textarea>
+          <button class="button" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
+    <!---------------------------- Gallery Section ------------------------>
+    <section class="grid padded-md">
+      <div class="bg-image bg-pug col-6 tall-70 editable">
+        <!-- background image pug sleeping -->
+      </div>
+      <div class="padded-md col-6-middle editable">
+        <h2>a catchy <span class="featured-text">heading</span></h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+          voluptatibus aspernatur impedit modi culpa repudiandae illo commodi
+          omnis voluptates dolor iure numquam quis obcaecati aut, eveniet
+          laborum velit tempore reiciendis? Mollitia voluptatibus aspernatur
+          impedit modi culpa repudiandae illo commodi omnis.
         </p>
-        <p class="editable">
-          <strong>Mail:</strong> <a href="mail:#">hello@thesleep.co </a>
+      </div>
+    </section>
+
+    <!--------------------------------- Help Icon Section -------------------------->
+    <section class="padded-md grid-center bg-light">
+      <div class="padded-1 col-12 center editable">
+        <h2>need help deciding?</h2>
+      </div>
+      <div class="padded-1 col-3 editable">
+        <i class="fa-solid fa-cloud"></i>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          incidunt nobis.
         </p>
-        <p class="editable"><strong>Store:</strong> 55 Main St, Chigaco</p>
-        <p class="editable">
-          <strong>Instagram:</strong> <a href="https://#">@thesleepco </a>
+      </div>
+      <div class="padded-1 col-3 editable">
+        <i class="fa-solid fa-cloud"></i>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          incidunt nobis quaerat earum.
         </p>
+      </div>
+      <div class="padded-1 col-3 editable">
+        <i class="fa-solid fa-cloud"></i>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          incidunt nobis quaerat.
+        </p>
+      </div>
+      <div class="col-12 center">
+        <a href="#">Chat to our team</a>
+      </div>
+    </section>
+
+    <!-- -------------------------------- Testimonial Section ----------------------------->
+    <section class="padded-lg grid">
+      <div class="col-1 right">
+        <span class="quote-icon editable">“</span>
+      </div>
+      <div class="col-10 center">
+        <p class="med-text font-weight-light editable">
+          I've never experienced sleep like this. Omg I really love this
+          mattress, I want to buy one for every member of my family
+        </p>
+        <p class="subtitle editable right">- A very happy customer</p>
+      </div>
+      <div class="col-1">
+        <span class="quote-icon editable">”</span>
+      </div>
+    </section>
+
+    <!---------------------------------- Footer  ------------------------------->
+    <footer class="padded-tb padded-lr grid bg-dark">
+      <div class="col-12 center">
+        <h2 class="editable">The Sleep Co</h2>
+        <p class="center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde enim
+          autem doloremque possimus blanditiis quae molestiae vel, veritatis
+          maiores quam voluptates eius numquam ipsa deleniti.
+        </p>
+      </div>
+
+      <div class="col-12 center margin-t-1">
+        <a href="#">
+          <i
+            class="fa-brands fa-square-facebook fa-social"
+            style="color: #ffffff"
+          ></i>
+        </a>
+        <a href="#">
+          <i
+            class="fa-brands fa-square-pinterest fa-social"
+            style="color: #ffffff"
+          ></i>
+        </a>
+        <a href="#">
+          <i
+            class="fa-brands fa-square-instagram fa-social"
+            style="color: #ffffff"
+          ></i>
+        </a>
       </div>
     </footer>
+    <div class="col-12 center sub-footer bg-dark">
+      <p class="sm-text">Copyright 2023</p>
+    </div>
   </body>
 </html>
