@@ -33,15 +33,23 @@
 
   <!-- This is the body where all the content goes, all information seen in the browser -->
   <body>
-    <nav>
-      <a href="/index.html"> Home </a>
-      <a href="/about.html"> About </a>
-      <a href="/contact.html"> Contact </a>
-    </nav>
-
     <!------------------------------Header Banner------------------------>
-    <header class="padded-md grid text-center tall-100">
-      <div class="col-12-middle">
+    <header class="padded-md grid center tall-100">
+      <div class="header-nav col-12 grid left">
+        <div class="col-4">
+          <a href="/index.html" class="logo">
+            <h2>The Sleep Co</h2>
+          </a>
+        </div>
+
+        <nav class="col-8 right">
+          <a href="/index.html"> Home </a>
+          <a href="/about.html"> About </a>
+          <a href="/products.html"> Products </a>
+          <a href="/contact.html"> Contact </a>
+        </nav>
+      </div>
+      <div class="col-12">
         <h3 class="font-weight-xbold editable">
           <span class="featured-text">sleep</span> like a baby
         </h3>
@@ -89,7 +97,7 @@
 
     <!--------------------------------- Feature Icon Section -------------------------->
     <section class="padded-md grid bg-dark">
-      <div class="padded-1 col-12 text-center editable">
+      <div class="padded-1 col-12 center editable">
         <h2><span class="featured-text">features</span> you will love</h2>
       </div>
       <div class="padded-1 col-3 editable">
@@ -131,7 +139,7 @@
     </section>
 
     <!-- -------------------------------- Image Banner ----------------------------->
-    <section class="padded-md text-center grid bg-pillow tall-70">
+    <section class="padded-md center grid bg-pillow tall-70">
       <div class="col-12-middle editable">
         <h3 class="big-text">
           <span class="small-text font-weight-normal"
@@ -145,10 +153,10 @@
 
     <!-- -------------------------------- Testimonial Section ----------------------------->
     <section class="padded-lg grid">
-      <div class="col-1 text-right">
+      <div class="col-1 right">
         <span class="quote-icon editable">“</span>
       </div>
-      <div class="col-10 text-center">
+      <div class="col-10 center">
         <p class="med-text font-weight-light editable">
           I've never experienced sleep like this. Omg I really love this
           mattress, I want to buy one for every member of my family
@@ -161,31 +169,39 @@
     </section>
 
     <!---------------------------------- Footer  ------------------------------->
-    <footer class="padded-md grid-spaceBetween bg-dark">
-      <div class="col-4-bottom">
-        <h2 class="editable">
-          Let's <br />
-          <span class="featured-text">connect</span>
-        </h2>
-        <p class="editable">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus
-          molestiae placeat, aperiam voluptatem dolorem architecto fugit? Quia
-          commodi tempora consequuntur quaerat! Eos provident aliquid vel,
-          laboriosam error odit repellendus?
+    <footer class="padded-tb padded-lr grid bg-dark">
+      <div class="col-12 center">
+        <h2 class="editable">The Sleep Co</h2>
+        <p class="center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde enim
+          autem doloremque possimus blanditiis quae molestiae vel, veritatis
+          maiores quam voluptates eius numquam ipsa deleniti.
         </p>
       </div>
-      <div class="col-5-bottom">
-        <p class="editable">
-          <strong>Call:</strong> <a href="tel:#">567890</a>
-        </p>
-        <p class="editable">
-          <strong>Mail:</strong> <a href="mail:#">hello@thesleep.co </a>
-        </p>
-        <p class="editable"><strong>Store:</strong> 55 Main St, Chigaco</p>
-        <p class="editable">
-          <strong>Instagram:</strong> <a href="https://#">@thesleepco </a>
-        </p>
+
+      <div class="col-12 center margin-t-1">
+        <a href="#">
+          <i
+            class="fa-brands fa-square-facebook fa-social"
+            style="color: #ffffff"
+          ></i>
+        </a>
+        <a href="#">
+          <i
+            class="fa-brands fa-square-pinterest fa-social"
+            style="color: #ffffff"
+          ></i>
+        </a>
+        <a href="#">
+          <i
+            class="fa-brands fa-square-instagram fa-social"
+            style="color: #ffffff"
+          ></i>
+        </a>
       </div>
     </footer>
+    <div class="col-12 center sub-footer bg-dark">
+      <p class="xs-text">Copyright 2023</p>
+    </div>
   </body>
 </html>
