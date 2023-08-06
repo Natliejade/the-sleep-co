@@ -77,6 +77,11 @@ html {
   padding-right: 20%;
 }
 
+.padded-lr-md {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .padded-t-1 {
   padding-top: 1rem;
 }
@@ -473,6 +478,16 @@ form button {
   padding: 0.5rem 2rem;
 }
 
+/* ----Milerlite form ----- */
+#mlb2-6628347.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+  background: none;
+}
+
+/* align footer flodesk form */
+/* #mlb2-6628347.ml-form-embedContainer .ml-form-align-center form [class*="ff-"] {
+  text-align: right !important;
+} */
+
 /* --------Link/CTA Styles */
 .help-team {
   text-transform: uppercase;
@@ -524,6 +539,10 @@ form button {
     font-size: 1.1rem;
   }
 
+  .sm-text-sm {
+    font-size: 1rem;
+  }
+
   .show-sm {
     display: block;
   }
@@ -564,6 +583,10 @@ form button {
     padding-right: 0;
   }
 
+  .sm-padded-t-10 {
+    padding-top: 10%;
+  }
+
   .sm-margin-t-0 {
     margin-top: 0;
   }
@@ -575,6 +598,10 @@ form button {
   }
   .sm-margin-r-0 {
     margin-right: 0;
+  }
+
+  .sm-margin-t-25 {
+    margin-top: 2.5rem;
   }
 
   header h3 {
