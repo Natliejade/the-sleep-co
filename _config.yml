@@ -1,6 +1,6 @@
 
-
-  _select_data:
+ 
+ _inputs:
     aspect-ratios:
       - square
       - portrait
@@ -24,4 +24,4 @@
       col-8: Two Thirds
       col-9: Three Quarters 
       col-10: Ten Twelfths 
-      col-11: Eleven Twelfths 
+      col-11: Eleven Twelfths
