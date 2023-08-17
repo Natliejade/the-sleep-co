@@ -255,6 +255,17 @@ p:last-child {
   padding-bottom: 134.5%;
 }
 
+/* Background Position */
+.bg-pos-t {background-position: top;}
+.bg-pos-b {background-position: bottom;}
+.bg-pos-l {background-position: left;}
+.bg-pos-r {background-position: right;}
+
+/* Looks inside any element that has a class of gallery, for any class that includes col- (could be part or all of it), then applies the styles */
+.gallery [class*="col-"] {
+  padding: 0.7%;
+}
+
 /* -------------------------Typography Styles -----------------*/
 
 body {
@@ -418,7 +429,7 @@ footer p {
   color: #192B37;
   padding: 5%;
   position: fixed;
-  width: 100%;
+  width: 100vh;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -461,11 +472,20 @@ header h3 {
   background-image: url("/images/pug.jpg");
   background-position: 50% 30%;
 }
-.bg-pillow {
+.bg-yellow-wall {
   background-image: url("/images/yellow-wall.jpg");
   background-size: cover;
   background-position: 50% 57%;
 }
+
+.bg-pillow {
+  background-image: url("/images/pillows.jpg");
+  background-size: cover;
+}
+
+/* ------ Image Gallery ------- */
+
+
 
 /* -------------- Icon Styles */
 /* This is for the testimonial quotes */

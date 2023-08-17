@@ -1,0 +1,78 @@
+---
+layout: default
+title: Gallery Page
+gallery:
+ - column-size: col-6
+   aspect-ratio: square 
+   background-image: /images/bed.jpg
+ - column-size: col-6
+   aspect-ratio: square 
+   background-image: /images/pug.jpg
+ - column-size: col-4
+   aspect-ratio: portrait-tall
+   background-image: /images/pillows.jpg   
+ - column-size: col-4
+   aspect-ratio: portrait-tall
+   background-image: /images/bed.jpg
+ - column-size: col-4
+   aspect-ratio: portrait-tall
+   background-image: /images/pug.jpg
+ - column-size: col-12
+   aspect-ratio: landscape
+   background-image: /images/pillows.jpg  
+---
+
+    <!------------------------------Header Banner------------------------>
+    <header class="grid center tall-60 xs-tall-50">
+
+    {% include header-nav.html %}
+
+      <div class="col-12">
+        <h3 class="font-weight-xbold editable">
+          <span class="featured-text">gallery</span> of dreams
+        </h3>
+        <h1 class="font-weight-normal editable" data-aos="fade-up">
+          explore our world of luxury
+        </h1>
+      </div>
+    </header>
+
+
+    <section class="bg-featured padded-md">
+        <div class="grid gallery">
+
+            {% for item in page.gallery %}
+            <div class="{{item.column-size}}">
+                <div class="bg-image {{item.aspect-ratio}}" 
+                style="background-image: url('{{item.background-image}}');">
+                </div>
+            </div>  
+            {% endfor %}
+        </div>
+
+   
+        <!-- <div class="col-6_xs-12">
+            <div class="bg-image square bg-bed"></div>
+        </div>
+
+        <div class="col-6_xs-12">
+            <div class="bg-image square bg-pug"></div>
+        </div>
+
+        <div class="col-4_sm-12">
+            <div class="bg-image portrait-tall bg-bed"></div>
+        </div>
+
+        <div class="col-4_sm-12">
+            <div class="bg-image portrait-tall bg-pug"></div>
+        </div>
+
+        <div class="col-4_sm-12">
+            <div class="bg-image portrait-tall bg-pillow"></div>
+        </div>
+
+        <div class="col-12_xs-12">
+            <div class="bg-image landscape bg-pillow"></div>
+        </div> -->
+
+    </section>  
