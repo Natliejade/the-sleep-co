@@ -1,6 +1,31 @@
 ---
 layout: default
 title: About Page
+featured:
+  - icons: fa-solid fa-bed
+    descriptions: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
+  - icons: fa-solid fa-cloud
+    descriptions: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
+  - icons: fa-solid fa-moon
+    descriptions: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
+  - icons: fa-solid fa-broom
+    descriptions: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
 ---
 
     <!------------------------------Header Banner------------------------>
@@ -12,7 +37,7 @@ title: About Page
         <h3 class="font-weight-xbold editable">
           we're the <span class="featured-text">best</span>
         </h3>
-        <h1 class="font-weight-normal editable">
+        <h1 class="font-weight-normal editable" data-aos="fade-up">
           the perfect mattress for your family
         </h1>
       </div>
@@ -103,16 +128,13 @@ title: About Page
       <div class="padded-1 col-12 center editable">
         <h2><span class="white-text">features</span> you will love</h2>
       </div>
+      {% for item in page.featured %}
       <div class="padded-1 col-3_sm-6_xs-12 editable">
-        <i class="fa-solid fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-          incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
-          deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
-          perferendis ducimus.
-        </p>
+        <i class="{{item.icons}}" data-aos="flip-left" data-aos-duration="1000"></i>
+        <p> {{item.descriptions}}</p>
       </div>
-      <div class="padded-1 col-3_sm-6_xs-12 editable">
+      {% endfor %}
+      <!-- <div class="padded-1 col-3_sm-6_xs-12 editable">
         <i class="fa-solid fa-cloud"></i>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
@@ -137,6 +159,6 @@ title: About Page
           incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
           deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
           perferendis ducimus.
-        </p>
+        </p> -->
       </div>
     </section>

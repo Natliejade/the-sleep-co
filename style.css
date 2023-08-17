@@ -391,6 +391,55 @@ footer p {
   margin-bottom: 2rem;
 }
 
+/* ------------ Hamburger Menu Styles */
+.hamburger-button i {
+    font-size: 2rem;
+}
+
+.hamburger-button {
+  text-align: right;
+  padding: 0rem;
+  display: block;
+  cursor: pointer;
+  font-weight: 200;
+  position: sticky;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2;
+}
+
+.hamburger-button.active {
+  color: #192B37;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #FFBE00;
+  color: #192B37;
+  padding: 5%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.mobile-menu a:hover {
+  font-size: 1.4rem;
+} 
+
 /* ---------- Welcome Banner Section */
 header {
   background-image: url("/images/pillows.jpg");
@@ -427,8 +476,8 @@ header h3 {
   line-height: 1;
 }
 
-.fa-cloud, 
-.fa-moon, 
+.fa-cloud,
+.fa-moon,
 .fa-bed,
 .fa-broom {
   display: block;
@@ -510,7 +559,8 @@ form button {
 
 .show-xs,
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
   display: none;
 }
 

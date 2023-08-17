@@ -30,105 +30,118 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- This is our css style sheet  this always goes in last-->
     <link rel="stylesheet" href="/style.css" />
   </head>
 
 
   <!------------------------------Header Banner------------------------>
-    <header class="grid center tall-100 md-tall-80">
-
-            <div class="header-nav col-12-top grid left sm-text-center">
-        <div class="col-5_sm-12-middle">
+<header class="grid center tall-100 md-tall-80">
+        <div class="header-nav col-12-top grid left">
+        <div class="col-5_sm-11-middle">
           <a href="/index.html">
             <h2 class="logo">The Sleep Co</h2>
           </a>
         </div>
 
-        <nav class="col-7_sm-12-middle right sm-text-center">
+        <nav class="col-7_sm-12-middle right sm-text-center hide-sm">
           <a href="/index.html"> Home </a>
           <a href="/about.html"> About </a>
           <a href="/products.html"> Products </a>
           <a href="/contact.html"> Contact </a>
         </nav>
-      </div>
-      
 
-      <div class="col-12">
-        <h3 class="font-weight-xbold editable">
-          <span class="featured-text">sleep</span> like a baby
-        </h3>
-        <h1 class="font-weight-normal editable">
-          the ultimate mattress solution
-        </h1>
-      </div>
-    </header>
+        <div class="col-1 show-sm">
+          <div class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
 
-    <!---------------------------- Gallery / About Section ------------------------>
-    <section class="grid">
-      <div class="padded-md col-6_xs-12-middle editable">
-        <h2>built to last a <span class="featured-text">lifetime</span></h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-          odio, optio quisquam officia illum excepturi, accusantium temporibus
-          assumenda natus iure delectus officia illum excepturi, accusantium
-          temporibus assumenda natus iure delectus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          neque, alias maxime deleniti eligendi itaque eveniet delectus autem
-          ullam dolorem beatae culpa, repellat quis odit cupiditate veritatis
-          sapiente incidunt animi. Molestiae odio, optio quisquam officia illum
-          excepturi, accusantium temporibus assumenda natus iure delectus.
-        </p>
-      </div>
-      <div class="bg-image bg-bed col-6_xs-12 tall-70 hide-xs editable">
-        <!-- backgroud image bed -->
-      </div>
-      <div class="bg-image bg-pug col-6_xs-12 tall-70 editable">
-        <!-- background image pug sleeping -->
-      </div>
-      <div class="padded-md col-6_xs-12-middle editable">
-        <h2>so <span class="featured-text">soft</span> you'll melt</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-          voluptatibus aspernatur impedit modi culpa repudiandae illo commodi
-          omnis voluptates dolor iure numquam quis obcaecati aut, eveniet
-          laborum velit tempore reiciendis? Mollitia voluptatibus aspernatur
-          impedit modi culpa repudiandae illo commodi omnis.
-        </p>
-      </div>
-    </section>
-
-    <!--------------------------------- Feature Icon Section -------------------------->
-    <section class="padded-md grid-center bg-dark">
-      <div class="padded-1 col-12 center">
-        <h2><span class="featured-text">features</span> you will love</h2>
       </div>
 
-      
-      <div class="padded-1 col-3_sm-6_xs-12">
-        <i class="fa-solid fa-bed"></i>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
-      </div>
-      
-      <div class="padded-1 col-3_sm-6_xs-12">
-        <i class="fa-solid fa-cloud"></i>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
-      </div>
-      
-      <div class="padded-1 col-3_sm-6_xs-12">
-        <i class="fa-solid fa-moon"></i>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
-      </div>
-      
-      <div class="padded-1 col-3_sm-6_xs-12">
-        <i class="fa-solid fa-broom"></i>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
-      </div>
-      
+      <nav class="mobile-menu">
+          <a href="/index.html"> Home </a>
+          <a href="/about.html"> About </a>
+          <a href="/products.html"> Products </a>
+          <a href="/contact.html"> Contact </a>
+      </nav>
 
-      <!-- <div class="padded-1 col-3_sm-6_xs-12 editable">
+  <div class="col-12">
+    <h3 class="font-weight-xbold editable">
+      <span class="featured-text">sleep</span> like a baby
+    </h3>
+    <h1 class="font-weight-normal editable" data-aos="fade-up"> the ultimate mattress solution </h1>
+  </div>
+</header>
+
+<!---------------------------- Gallery / About Section ------------------------>
+<section class="grid">
+  <div class="padded-md col-6_xs-12-middle editable">
+    <h2>built to last a <span class="featured-text">lifetime</span></h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odio,
+      optio quisquam officia illum excepturi, accusantium temporibus assumenda
+      natus iure delectus officia illum excepturi, accusantium temporibus
+      assumenda natus iure delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      neque, alias maxime deleniti eligendi itaque eveniet delectus autem ullam
+      dolorem beatae culpa, repellat quis odit cupiditate veritatis sapiente
+      incidunt animi. Molestiae odio, optio quisquam officia illum excepturi,
+      accusantium temporibus assumenda natus iure delectus.
+    </p>
+  </div>
+  <div class="bg-image bg-bed col-6_xs-12 tall-70 hide-xs editable">
+    <!-- backgroud image bed -->
+  </div>
+  <div class="bg-image bg-pug col-6_xs-12 tall-70 editable">
+    <!-- background image pug sleeping -->
+  </div>
+  <div class="padded-md col-6_xs-12-middle editable">
+    <h2>so <span class="featured-text">soft</span> you'll melt</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+      voluptatibus aspernatur impedit modi culpa repudiandae illo commodi omnis
+      voluptates dolor iure numquam quis obcaecati aut, eveniet laborum velit
+      tempore reiciendis? Mollitia voluptatibus aspernatur impedit modi culpa
+      repudiandae illo commodi omnis.
+    </p>
+  </div>
+</section>
+
+<!--------------------------------- Feature Icon Section -------------------------->
+<section class="padded-md grid-center bg-dark">
+  <div class="padded-1 col-12 center">
+    <h2><span class="featured-text">features</span> you will love</h2>
+  </div>
+
+  
+  <div class="padded-1 col-3_sm-6_xs-12">
+    <i class="fa-solid fa-bed" data-aos="flip-left" data-aos-duration="1000"></i>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+  </div>
+  
+  <div class="padded-1 col-3_sm-6_xs-12">
+    <i class="fa-solid fa-cloud" data-aos="flip-left" data-aos-duration="1000"></i>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+  </div>
+  
+  <div class="padded-1 col-3_sm-6_xs-12">
+    <i class="fa-solid fa-moon" data-aos="flip-left" data-aos-duration="1000"></i>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+  </div>
+  
+  <div class="padded-1 col-3_sm-6_xs-12">
+    <i class="fa-solid fa-broom" data-aos="flip-left" data-aos-duration="1000"></i>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+  </div>
+  
+
+  <!-- <div class="padded-1 col-3_sm-6_xs-12 editable">
         <i class="fa-solid fa-cloud"></i>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
@@ -155,37 +168,38 @@
           perferendis ducimus.
         </p>
       </div> -->
-    </section>
+</section>
 
-    <!-- -------------------------------- Image Banner ----------------------------->
-    <section class="padded-md center grid bg-pillow tall-70">
-      <div class="col-12-middle editable">
-        <h3 class="big-text">
-          <span class="small-text font-weight-normal">never underestimate the power of</span>
-          <br />
-          a good night <span class="white-text">sleep</span>
-        </h3>
-      </div>
-    </section>
+<!-- -------------------------------- Image Banner ----------------------------->
+<section class="padded-md center grid bg-pillow tall-70">
+  <div class="col-12-middle editable">
+    <h3 class="big-text">
+      <span class="small-text font-weight-normal"
+        >never underestimate the power of</span
+      >
+      <br />
+      a good night <span class="white-text">sleep</span>
+    </h3>
+  </div>
+</section>
 
-    <!-- -------------------------------- Testimonial Section ----------------------------->
-    <section class="padded-lg grid">
-      <div class="col-1 right">
-        <span class="quote-icon">“</span>
-      </div>
-      <div class="col-10 center editable">
-        <p class="med-text font-weight-light editable">
-          I've never experienced sleep like this. Omg I really love this
-          mattress, I want to buy one for every member of my family
-        </p>
-        <p class="subtitle editable">- A very happy customer</p>
-      </div>
-      <div class="col-1">
-        <span class="quote-icon">”</span>
-      </div>
-    </section>
+<!-- -------------------------------- Testimonial Section ----------------------------->
+<section class="padded-lg grid">
+  <div class="col-1 right">
+    <span class="quote-icon">“</span>
+  </div>
+  <div class="col-10 center editable">
+    <p class="med-text font-weight-light editable">
+      I've never experienced sleep like this. Omg I really love this mattress, I
+      want to buy one for every member of my family
+    </p>
+    <p class="subtitle editable">- A very happy customer</p>
+  </div>
+  <div class="col-1">
+    <span class="quote-icon">”</span>
+  </div>
+</section>
 
-   
 
 
 
@@ -237,6 +251,12 @@
     </div>
   </body>
 
+  <!-- Add jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Animate of Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- MailerLite Universal -->
   <script>
     (function (w, d, e, u, f, l, n) {
@@ -260,4 +280,7 @@
     ml("account", "123827");
   </script>
   <!-- End MailerLite Universal -->
+
+  <!-- Our custom Javascript file -->
+  <script src="/scripts.js"></script>
 </html>

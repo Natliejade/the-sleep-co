@@ -1,19 +1,38 @@
 ---
 layout: default
 title: Contact Page
+featured:
+  - icon: fa-solid fa-cloud
+    description: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
+  - icon: fa-solid fa-cloud
+    description: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
+  - icon: fa-solid fa-cloud
+    description: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+      incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
+      deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
+      perferendis ducimus.
 ---
 
     <!------------------------------Header Banner------------------------>
     <header class="grid center tall-60 xs-tall-50">
 
-    {% include header-nav.html %}§
+    {% include header-nav.html %}
 
       <div class="col-12">
         <h3 class="font-weight-xbold editable">
           why
           <span class="featured-text">wait?</span>
         </h3>
-        <h1 class="font-weight-normal editable">
+        <h1 class="font-weight-normal editable" data-aos="fade-up">
           one call away from the perfect night sleep
         </h1>
       </div>
@@ -66,14 +85,14 @@ title: Contact Page
       <div class="padded-1 col-12 center editable margin-b-1">
         <h2>need help deciding?</h2>
       </div>
+
+      {% for item in page.featured %}
       <div class="padded-1 col-3_sm-4_xs-12 editable">
-        <i class="fa-solid fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-          incidunt nobis.
-        </p>
+        <i class="{{item.icon}}" data-aos="flip-left" data-aos-duration="1000"></i>
+        <p>{{item.description}}</p>
       </div>
-      <div class="padded-1 col-3_sm-4_xs-12 editable">
+      {% endfor %}
+      <!-- <div class="padded-1 col-3_sm-4_xs-12 editable">
         <i class="fa-solid fa-cloud"></i>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
@@ -86,7 +105,7 @@ title: Contact Page
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
           incidunt nobis quaerat.
         </p>
-      </div>
+      </div> -->
       <div class="col-12 center margin-t-2 sm-margin-t-3 sm-margin-b-2">
         <a href="#" class="bg-dark help-team">Chat to our team</a>
       </div>

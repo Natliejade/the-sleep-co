@@ -30,6 +30,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- This is our css style sheet  this always goes in last-->
     <link rel="stylesheet" href="/style.css" />
   </head>
@@ -38,27 +41,40 @@
       <!------------------------------Header Banner------------------------>
     <header class="grid center tall-60 xs-tall-50">
 
-          <div class="header-nav col-12-top grid left sm-text-center">
-        <div class="col-5_sm-12-middle">
+          <div class="header-nav col-12-top grid left">
+        <div class="col-5_sm-11-middle">
           <a href="/index.html">
             <h2 class="logo">The Sleep Co</h2>
           </a>
         </div>
 
-        <nav class="col-7_sm-12-middle right sm-text-center">
+        <nav class="col-7_sm-12-middle right sm-text-center hide-sm">
           <a href="/index.html"> Home </a>
           <a href="/about.html"> About </a>
           <a href="/products.html"> Products </a>
           <a href="/contact.html"> Contact </a>
         </nav>
+
+        <div class="col-1 show-sm">
+          <div class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
       </div>
-      
+
+      <nav class="mobile-menu">
+          <a href="/index.html"> Home </a>
+          <a href="/about.html"> About </a>
+          <a href="/products.html"> Products </a>
+          <a href="/contact.html"> Contact </a>
+      </nav>
 
       <div class="col-12">
         <h3 class="font-weight-xbold editable">
           we're the <span class="featured-text">best</span>
         </h3>
-        <h1 class="font-weight-normal editable">
+        <h1 class="font-weight-normal editable" data-aos="fade-up">
           the perfect mattress for your family
         </h1>
       </div>
@@ -149,16 +165,28 @@
       <div class="padded-1 col-12 center editable">
         <h2><span class="white-text">features</span> you will love</h2>
       </div>
+      
       <div class="padded-1 col-3_sm-6_xs-12 editable">
-        <i class="fa-solid fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-          incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
-          deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
-          perferendis ducimus.
-        </p>
+        <i class="fa-solid fa-bed" data-aos="flip-left" data-aos-duration="1000"></i>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
       </div>
+      
       <div class="padded-1 col-3_sm-6_xs-12 editable">
+        <i class="fa-solid fa-cloud" data-aos="flip-left" data-aos-duration="1000"></i>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+      </div>
+      
+      <div class="padded-1 col-3_sm-6_xs-12 editable">
+        <i class="fa-solid fa-moon" data-aos="flip-left" data-aos-duration="1000"></i>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+      </div>
+      
+      <div class="padded-1 col-3_sm-6_xs-12 editable">
+        <i class="fa-solid fa-broom" data-aos="flip-left" data-aos-duration="1000"></i>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum perferendis ducimus.</p>
+      </div>
+      
+      <!-- <div class="padded-1 col-3_sm-6_xs-12 editable">
         <i class="fa-solid fa-cloud"></i>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
@@ -183,7 +211,7 @@
           incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt
           deleniti, quibusdam ad dolor sit molestiae at laborum vel ipsum
           perferendis ducimus.
-        </p>
+        </p> -->
       </div>
     </section>
 
@@ -238,6 +266,12 @@
     </div>
   </body>
 
+  <!-- Add jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Animate of Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- MailerLite Universal -->
   <script>
     (function (w, d, e, u, f, l, n) {
@@ -261,4 +295,7 @@
     ml("account", "123827");
   </script>
   <!-- End MailerLite Universal -->
+
+  <!-- Our custom Javascript file -->
+  <script src="/scripts.js"></script>
 </html>
