@@ -1,27 +1,16 @@
+_select_data:
+  aspect-ratios:
+    - square
+    - portrait
+    - portrait-tall
+    - landscape
+    - landscape-wide
 
- 
- _inputs:
-    aspect-ratios:
-      - square
-      - portrait
-      - portrait-tall
-      - portrait-134
-      - landscape
-      - landscape-wide
-
-    column-sizes:
-      col-6: One Half
-      col-12: Full Width
-      col-4: One Third
-      col-3: One Quarter
-      col-6_sm-12: One Half (Stacked)
-      col-4_sm-12: One Third (Stacked)
-      col-3_sm-12: One Quater (Stacked)
-      col-1: One Twelth 
-      col-2: One Sixth
-      col-5: Five Twelfths 
-      col-7: Seven Twelfths 
-      col-8: Two Thirds
-      col-9: Three Quarters 
-      col-10: Ten Twelfths 
-      col-11: Eleven Twelfths
+  column-sizes:
+    col-6: One Half
+    col-12: Full Width
+    col-4: One Third
+    col-3: One Quarter
+    col-6_sm-12: One Half (Stacked)
+    col-4_sm-12: One Third (Stacked)
+    col-3_sm-12: One Quarter (Stacked)
