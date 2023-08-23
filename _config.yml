@@ -1,12 +1,12 @@
-_select_data:
-  aspect-ratios:
+_select_data: 
+  aspect-ratios: 
     - square
     - portrait
     - portrait-tall
     - landscape
     - landscape-wide
 
-  column-sizes:
+  column-sizes: 
     col-6: One Half
     col-12: Full Width
     col-4: One Third
