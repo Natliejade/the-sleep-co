@@ -1,28 +1,16 @@
-# Read the CloudCannon documentation for more information on how to use this file:
-# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Static
+_select_data: 
+  aspect-ratios: 
+    - square
+    - portrait
+    - portrait-tall
+    - landscape
+    - landscape-wide
 
-# Collections are related sets of content files, typically grouped by folder.
-# Here you can define your collections, as well as any
-# CloudCannon configuration specific to those collections.
-collections_config: {}
-
-# Control which collections are displayed in the CloudCannon site navigation,
-# and how those collections are grouped.
-collection_groups:
-
-# Control which data sets are available to populate select and multiselect inputs.
-data_config:
-
-# Base path to your source files, relative to the root folder of your repository.
-source:
-
-# The locations of various types of files within your site.
-# Each path is relative to your site's source folder.
-paths: {}
-
-# Lets you control the look and behaviour of the Source Editor.
-source_editor:
-
-# Timezone of your site in IANA format. This is used by date and datetime inputs
-# within the CloudCannon Data Editor.
-timezone: Etc/UTC
+  column-sizes: 
+    col-6: One Half
+    col-12: Full Width
+    col-4: One Third
+    col-3: One Quarter
+    col-6_sm-12: One Half (Stacked)
+    col-4_sm-12: One Third (Stacked)
+    col-3_sm-12: One Quarter (Stacked)

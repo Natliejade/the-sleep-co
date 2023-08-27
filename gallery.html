@@ -1,23 +1,24 @@
 ---
 layout: default
 title: Gallery Page
+popup-gallery: true
 gallery:
- - column-size: col-6
+ - column-size: col-6_sm-12
    aspect-ratio: square 
    background_image: /images/bed.jpg
- - column-size: col-6
+ - column-size: col-6_sm-12
    aspect-ratio: square 
    background_image: /images/pug.jpg
- - column-size: col-4
+ - column-size: col-4_sm-12
    aspect-ratio: portrait-tall
    background_image: /images/pillows.jpg   
- - column-size: col-4
+ - column-size: col-4_sm-12
    aspect-ratio: portrait-tall
    background_image: /images/bed.jpg
- - column-size: col-4
+ - column-size: col-4_sm-12
    aspect-ratio: portrait-tall
    background_image: /images/pug.jpg
- - column-size: col-12
+ - column-size: col-12_sm-12
    aspect-ratio: landscape
    background_image: /images/pillows.jpg  
 ---
@@ -37,8 +38,40 @@ gallery:
       </div>
     </header>
 
+    {% if page.popup-gallery == true %}
 
+    <!-- Clickable Popup Gallery -->
     <section class="bg-featured padded-md">
+        <h2> Popup Gallery </h2>
+        <div class="grid gallery" id="lightgallery">
+
+            {% for item in page.gallery %}
+            <a class="{{item.column-size}}" href="{{item.background_image}}">
+                <div class="bg-image {{item.aspect-ratio}}" 
+                style="background-image: url('{{item.background_image}}');"> 
+                </div>
+            </a>  
+            {% endfor %}
+        </div> 
+
+        <!-- Click on button to show gallery -->
+        <!-- <div class="grid gallery" id="lightgallery-2">
+            <a class="button-gallery" href="/images/bed.jpg" title="Luxury bed">
+              View our work
+            </a>           
+            <a href="/images/pug.jpg" title="Adorbale pug"></a>     
+            <a href="/images/pillows.jpg" title="Melt in the pillows"></a> 
+            <a href="/images/bed.jpg" title="Luxury bed"></a> 
+            <a href="/images/pug.jpg" title="Adorable pug"></a> 
+            <a href="/images/pillows.jpg" title="Melt in the pillows"></a> 
+        </div>  -->
+    </section>  
+
+    {% else %}
+
+    <!-- Standard Gallery -->
+    <section class="bg-featured padded-md">
+        <h2> Standard Gallery </h2>
         <div class="grid gallery">
 
             {% for item in page.gallery %}
@@ -76,3 +109,5 @@ gallery:
         </div> -->
 
     </section>  
+
+    {% endif %}

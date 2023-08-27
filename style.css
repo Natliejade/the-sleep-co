@@ -485,6 +485,32 @@ header h3 {
 
 /* ------ Image Gallery ------- */
 
+/* Bckground of gallery when active */
+.lg-backdrop {
+  background-color: #192B37;
+}
+
+.lg-backdrop.in {
+  opacity: 0.9;
+}
+
+.button-gallery {
+  background-color: #192B37;
+  color: #FFBE00;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border: 2px solid #192B37;
+  border-radius: 3px;
+  padding: 0.5rem 2rem;
+  margin-left: 5px;
+}
+
+.button-gallery:hover {
+  background-color: #FFBE00;
+  border: 2px solid #192B37;
+  color: inherit;
+}
 
 
 /* -------------- Icon Styles */

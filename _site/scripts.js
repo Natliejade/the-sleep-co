@@ -13,3 +13,15 @@ $( document ).ready(function() {
         duration: 500, // values from 0 to 3000, with step 50ms
     });
 });
+
+// LightGallery popup
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
+});
+
+// LightGallery popup
+lightGallery(document.getElementById('lightgallery-2'), {
+  speed: 500,
+  download: false
+});
