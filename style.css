@@ -580,9 +580,19 @@ form button {
   padding: 0.5rem 2rem;
 }
 
+form button:hover {
+  background-color: #192B37;
+  color: #ffbe00;
+  border: 2px solid #ffbe00;
+}
+
 /* ----Milerlite form ----- */
 #mlb2-6628347.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
   background: none;
+}
+
+#mlb2-6628347.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+  background-color: #ffbe00 !important;
 }
 
 /* align footer flodesk form */
