@@ -2,25 +2,32 @@
 layout: default
 title: Gallery Page
 popup-gallery: true
+gallery-background: bg-featured
 gallery:
  - column-size: col-6_sm-12
    aspect-ratio: square 
    background_image: /images/bed.jpg
+   type: pillow
  - column-size: col-6_sm-12
    aspect-ratio: square 
    background_image: /images/pug.jpg
+   type: mattress
  - column-size: col-4_sm-12
    aspect-ratio: portrait-tall
-   background_image: /images/pillows.jpg   
+   background_image: /images/pillows.jpg 
+   type: bed  
  - column-size: col-4_sm-12
    aspect-ratio: portrait-tall
    background_image: /images/bed.jpg
+   type: bed
  - column-size: col-4_sm-12
    aspect-ratio: portrait-tall
    background_image: /images/pug.jpg
+   type: pillow
  - column-size: col-12_sm-12
    aspect-ratio: landscape
    background_image: /images/pillows.jpg  
+   type: mattress
 ---
 
     <!------------------------------Header Banner------------------------>
@@ -41,7 +48,7 @@ gallery:
     {% if page.popup-gallery == true %}
 
     <!-- Clickable Popup Gallery -->
-    <section class="bg-featured padded-md">
+    <section class="padded-md {{page.gallery-background}}">
         <h2> Pop-up Gallery </h2>
         <div class="grid gallery" id="lightgallery">
 
@@ -70,7 +77,7 @@ gallery:
     {% else %}
 
     <!-- Standard Gallery -->
-    <section class="bg-featured padded-md">
+    <section class="padded-md {{page.gallery-background}}">
         <h2> Standard Gallery </h2>
         <div class="grid gallery">
 
@@ -111,3 +118,6 @@ gallery:
     </section>  
 
     {% endif %}
+
+    <!-- -------------------------------- Testimonial Section ----------------------------->
+    {% include testimonial.html %}
