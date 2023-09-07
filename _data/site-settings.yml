@@ -1,0 +1,22 @@
+seo: 
+  site_name: The Sleep Co
+  title: 
+  description: 
+  keywords: 
+  social_image: 
+  author: 
+  favicon_image: 
+social: 
+  instagram_username:
+  facebook_url:
+  pinterest_url:
+design:
+  page-font_color: 'Catamaran, sans-serif'
+  dark_color: '#192b37'
+  featured_color: '#ffbe00'
+  light_color: '#e3ecf2'
+  image-background_color: 'rgb(240, 240, 240)'
+  featured-text_color: '#ffbe00'
+  light-text_color: '#ffffff'
+  dark-text_color: '#192b37'
+  quotes_color: 'rgb(120, 120, 125)'
