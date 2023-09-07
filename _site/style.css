@@ -4,6 +4,19 @@
     Navy:   #192B37;
 */
 
+/* ------- Color Variables -------- */
+/* :root {
+  --page-font: "Catamaran", sans-serif;
+  --dark: #192b37;
+  --featured: #ffbe00;
+  --light: #e3ecf2;
+  --image-background: rgb(240, 240, 240);
+  --featured-text: #ffbe00;
+  --light-text: #ffffff;
+  --dark-text: #192b37;
+  --quotes: rgb(120, 120, 125);
+} */
+
 /* ---------------------- Universal styles & Utility classes--------------*/
 /* CSS RESET */
 * {
@@ -217,23 +230,23 @@ p:last-child {
 /* ------------- Image styles */
 .bg-image,
 [class*="bg-image"] {
-  background-color: rgb(240, 240, 240);
+  background-color: var(--image-background);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bg-dark {
-  background-color: #192b37;
+  background-color: var(--dark);
   color: white;
 }
 
 .bg-featured {
-  background-color: #ffbe00;
+  background-color: var(--featured);
 }
 
 .bg-light {
-  background-color: #e3ecf2;
+  background-color: var(--light);
 }
 
 .portrait-tall {
@@ -256,10 +269,18 @@ p:last-child {
 }
 
 /* Background Position */
-.bg-pos-t {background-position: top;}
-.bg-pos-b {background-position: bottom;}
-.bg-pos-l {background-position: left;}
-.bg-pos-r {background-position: right;}
+.bg-pos-t {
+  background-position: top;
+}
+.bg-pos-b {
+  background-position: bottom;
+}
+.bg-pos-l {
+  background-position: left;
+}
+.bg-pos-r {
+  background-position: right;
+}
 
 /* Looks inside any element that has a class of gallery, for any class that includes col- (could be part or all of it), then applies the styles */
 .gallery [class*="col-"] {
@@ -269,8 +290,8 @@ p:last-child {
 /* -------------------------Typography Styles -----------------*/
 
 body {
-  font-family: "Catamaran", sans-serif;
-  color: #192b37;
+  font-family: var(--page-font);
+  color: var(--dark-text);
 }
 
 .left {
@@ -320,14 +341,14 @@ a {
 }
 
 a:hover {
-  color: #ffbe00;
+  color: var(--featured);
 }
 
 .featured-text {
-  color: #ffbe00;
+  color: var(--featured-text);
 }
 .white-text {
-  color: #ffffff;
+  color: var(--light-text);
 }
 
 .xs-text {
@@ -403,12 +424,12 @@ footer p {
 }
 
 .fa-brands:hover {
-    color: #ffbe00;
+  color: var(--featured);
 }
 
 /* ------------ Hamburger Menu Styles */
 .hamburger-button i {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .hamburger-button {
@@ -424,13 +445,13 @@ footer p {
 }
 
 .hamburger-button.active {
-  color: #192B37;
+  color: var(--dark);
 }
 
 .mobile-menu {
   display: none;
-  background-color: #FFBE00;
-  color: #192B37;
+  background-color: var(--featured);
+  color: var(--dark-text);
   padding: 5%;
   position: fixed;
   width: 100vh;
@@ -453,7 +474,7 @@ footer p {
 
 .mobile-menu a:hover {
   font-size: 1.4rem;
-} 
+}
 
 /* ---------- Welcome Banner Section */
 header {
@@ -491,7 +512,7 @@ header h3 {
 
 /* Bckground of gallery when active */
 .lg-backdrop {
-  background-color: #192B37;
+  background-color: var(--dark);
 }
 
 .lg-backdrop.in {
@@ -499,30 +520,29 @@ header h3 {
 }
 
 .button-gallery {
-  background-color: #192B37;
-  color: #FFBE00;
+  background-color: var(--dark);
+  color: var(--featured-text);
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  border: 2px solid #192B37;
+  border: 2px solid var(--dark);
   border-radius: 3px;
   padding: 0.5rem 2rem;
   margin-left: 5px;
 }
 
 .button-gallery:hover {
-  background-color: #FFBE00;
-  border: 2px solid #192B37;
+  background-color: var(--featured);
+  border: 2px solid var(--dark);
   color: inherit;
 }
-
 
 /* -------------- Icon Styles */
 /* This is for the testimonial quotes */
 .quote-icon {
   font-size: 6rem;
   display: inline-block;
-  color: rgb(120, 120, 125);
+  color: var(--quotes);
   line-height: 1;
 }
 
@@ -546,7 +566,7 @@ header h3 {
 
 /* ------------Card Styles */
 .card {
-  border: 4px solid #ffbe00;
+  border: 4px solid var(--featured);
 }
 
 /*----------------- Buttons & Forms  */
@@ -565,25 +585,25 @@ textarea {
 
 form input:focus,
 form textarea:focus {
-  border-color: #ffbe00;
+  border-color: var(--featured);
 }
 
 form button {
-  background-color: #ffbe00;
+  background-color: var(--featured);
   color: inherit;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  border: 2px solid #ffbe00;
+  border: 2px solid var(--featured);
   border-radius: 3px;
   width: 100%;
   padding: 0.5rem 2rem;
 }
 
 form button:hover {
-  background-color: #192B37;
-  color: #ffbe00;
-  border: 2px solid #ffbe00;
+  background-color: var(--dark);
+  color: var(--featured-text);
+  border: 2px solid var(--featured);
 }
 
 /* ----Milerlite form ----- */
@@ -591,8 +611,12 @@ form button:hover {
   background: none;
 }
 
-#mlb2-6628347.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-  background-color: #ffbe00 !important;
+#mlb2-6628347.ml-form-embedContainer
+  .ml-form-embedWrapper
+  .ml-form-embedBody
+  .ml-form-horizontalRow
+  button:hover {
+  background-color: var(--featured) !important;
 }
 
 /* align footer flodesk form */
@@ -611,8 +635,8 @@ form button:hover {
 }
 
 .help-team:hover {
-  background-color: #ffbe00;
-  color: #192b37;
+  background-color: var(--featured);
+  color: var(--dark-text);
 }
 
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */

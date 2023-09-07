@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <!-- This is the head of our html, where we add external resources and metadata - all the information for the browser that is not seen-->
+    <!-- This is the head of our html, where we add external resources and metadata - all the information for the browser that is not seen-->
 
-  {% include head.html %}
-
+    {% include head.html %}
   </head>
+
   <body>
+    {% include inline-styles.html %} 
+    
+    {{ content }}
 
-  {{ content }}
-
-   <!--------------- Footer  ------------------------------->
-  {% include site-footer.html %}
-
+    <!--------------- Footer  ------------------------------->
+    {% include site-footer.html %}
   </body>
 
   <!---------- This is where all the javascript scripts go -->
   {% include body-scripts.html %}
-
 </html>
