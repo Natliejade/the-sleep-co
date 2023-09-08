@@ -3,13 +3,13 @@ layout: default
 title: Products Page
 cards:
  - heading: standard mattress
-   description: Lorem ipsum dolor, sit amet consectetur adipisicing elite. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae.
+   description_html: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elite. Similique incidunt nobis quaerat earum iure adipisci consequuntur, <em>eum sunt deleniti, quibusdam ad dolor sit molestiae.</em></p>
    featured_image: /images/pillows.jpg
  - heading: deluxe mattress
-   description: Lorem ipsum dolor, sit amet consectetur adipisicing elite. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae.
-   featured_image: /images/bed.jpg
+   description_html: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elite. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae.
+   featured_image: /images/bed.jpg</p>
  - heading: luxury mattress
-   description: Lorem ipsum dolor, sit amet consectetur adipisicing elite. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae.
+   description_html: <p>Lorem ipsum dolor, sit amet consectetur adipisicing elite. Similique incidunt nobis quaerat earum iure adipisci consequuntur, eum sunt deleniti, quibusdam ad dolor sit molestiae.</p>
    featured_image: /images/yellow-wall.jpg
 ---
 
@@ -75,7 +75,7 @@ cards:
           <div class="bg-image portrait editable" style="background-image: url('{{item.featured_image}}')" ></div>
           <div class="padded-2 editable"> 
             <h3> {{item.heading}} </h3>
-            <p> {{item.description}} </p>
+            {{item.description_html}}
           </div>
         </div>
 
